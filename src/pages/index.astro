@@ -8,6 +8,12 @@ import Layout from "../layouts/Layout.astro"
 		<a href="/"><i class="bx bxs-home"></i></a>
 		<span>Yastacode</span>
 	</nav>
+
+	<!-- @header: basic info -->
+	 <header class="basic">
+		<h1>Petros <span>Córdova</span></h1>
+		<label>"As a passionate front-end web developer, I transform your ideas into <b> high-performing, accessible, and aesthetically pleasing website.</b> Specializing in crafting fluid user experiences, I master <b> Astro, React, </b> and the optimization of <b> non-relational database (JSON) </b> for modern, robust web applications. From simple presentations to complex web apps, I'm ready to tackle your challenges!"</label>
+	 </header>
 </Layout>
 
 <style>
@@ -32,5 +38,17 @@ import Layout from "../layouts/Layout.astro"
 	nav a:hover{
 		filter: contrast(20%);
 		transform: translateY(-4px);
+	}
+
+	/* @header: basic */
+	header.basic{}
+	header h1{
+		
+	}
+	header h1 span{
+		color: #007bff;
+	}
+	header label{
+		text-align: justify;
 	}
 </style>
