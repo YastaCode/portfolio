@@ -3,5 +3,34 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
-	<h1>Hola Astro</h1>
+	<!-- @nav: breadcrumb -->
+	<nav class="breadcrumb">
+		<a href="/"><i class="bx bxs-home"></i></a>
+		<span>Yastacode</span>
+	</nav>
 </Layout>
+
+<style>
+	/* @nav: breadcrumb */
+	nav.breadcrumb{
+		background: rgba(0,0,0,0.03);
+		border-bottom: 1px solid rgba(0,0,0,0.15);
+		padding: 1.65rem 0;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		gap: 0.2rem;
+	}
+	nav a{
+		font-size: 1.7rem;
+		color: #007bff;
+		text-decoration: none;
+		text-transform: capitalize;
+		transition: all 0.6s ease;
+		display: flex;
+	}
+	nav a:hover{
+		filter: contrast(20%);
+		transform: translateY(-4px);
+	}
+</style>
