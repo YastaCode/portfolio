@@ -62,9 +62,17 @@ h1,h2,h3,h4,h5,h6{
 }
 h1,h2{
     text-transform: capitalize;
+    span{
+        font-weight: 300;
+    }
 }
 a{
     text-decoration: none;
+    color: var(--primary);
+
+}
+a:hover{
+    text-decoration: underline;
 }
 /* @skeleton: style */
 .skeleton{
@@ -82,3 +90,55 @@ a{
 .skeleton:hover{
     box-shadow: 0 0 15px var(--gray-500);
 }
+
+/* @nav: breadcrumb */
+	nav.breadcrumb{
+		border-bottom: 1px solid var(--border-color);
+		padding: 1.65rem 0;
+        font-size: 0.9rem;
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		gap: 0.2rem;
+	}
+	nav a{
+		text-decoration: none;
+		text-transform: capitalize;
+		display: flex;
+	}
+    nav a:first-child{
+        text-decoration: none;
+    }
+	nav a:hover{
+        filter: contrast(20%);
+	}
+    nav .bxs-home{
+        transition: all 0.6s ease;
+        font-size: 1.7rem;
+    }
+    nav .bxs-home:hover{
+        transform: translateY(-4px);
+    }
+    nav .bx-chevron-right{
+        font-size: 1.2rem;
+    }
+    nav span{
+        text-transform: capitalize;
+        color: inherit;
+    }
+
+    /* @header: basic */
+	header label{
+		text-align: justify;
+	}
+
+	/* @main: sections */
+	main{
+		flex: 1;
+	}
+	/* @section: experiences */
+	/* @section: projects */
+    
+    article a:hover{
+        filter: contrast(20%);
+    }
