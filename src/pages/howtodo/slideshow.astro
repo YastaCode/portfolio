@@ -1,27 +1,31 @@
 ---
+import SlideCarousel from "../../components/SlideCarousel.astro"
 import Layout from "../../layouts/Layout.astro"
 ---
 
 <Layout>
     <!-- @nav: breadcrumb -->
 	<nav class="breadcrumb">
-		<a href="/"><i class="bx bxs-home"></i></a>
+        <a href="/"><i class="bx bxs-home"></i></a>
         <i class='bx bx-chevron-right'></i>
         <a href="/howtodo/">how to do</a>
         <i class='bx bx-chevron-right'></i>
 		<span>slideshow</span>
 	</nav>
-
+    
     <!-- @header: basic info -->
 	<header class="slideshow">
-		<h1><span>Slideshow</span> examples</h1>
+        <h1><span>Slideshow</span> examples</h1>
 	</header>
-
+    
     <!-- main -->
-     <main>
-    <!-- @section: experiences -->
+    <main>
+        <!-- @section: experiences -->
 		<section class="carousel" id="Carousel">
-			
+            <h2>slideshow <span>carousel</span></h2>
+			<article>
+                <SlideCarousel />
+            </article>
 		</section>
      </main>
 </Layout>
