@@ -135,12 +135,14 @@ a:hover{
 	/* @main: sections */
 	main{
 		flex: 1;
+	}
+    .slideshow{
         display: flex;
         flex-direction: column;
         gap: 3rem;
-	}
+    }
     /* @section: tags */
-    section{
+    .carousel{
         background: var(--gray-200);
         padding: 1rem;
         border: 1px solid var(--border-color);
@@ -148,6 +150,9 @@ a:hover{
     }
 	/* @section: experiences */
 	/* @section: projects */
+    .projects{
+
+    }
     
     article a:hover{
         filter: contrast(20%);
