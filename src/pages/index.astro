@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro"
 ---
 
 <Layout>
+
 	<!-- @nav: breadcrumb -->
 	<nav class="breadcrumb">
 		<a href="/"><i class="bx bxs-home"></i></a>
@@ -10,29 +11,28 @@ import Layout from "../layouts/Layout.astro"
 	</nav>
 
 	<!-- @header: basic info -->
-	 <header class="basic">
+	<header class="info">
 		<h1>Petros <span>Córdova</span></h1>
-		<label>"As a passionate Front-Fnd web developer, I transform your ideas into high-performing, accessible, and aesthetically pleasing website. Specializing in crafting fluid user experiences, I master <span>Astro, React,</span> and the optimization of <> non-relational database (JSON) for modern, robust web applications. From simple presentations to complex web apps, I'm ready to tackle your challenges!"</label>
-	 </header>
+		<label>
+			"As a passionate Front-Fnd web developer, I transform your ideas into high-performing, accessible, and aesthetically pleasing website. Specializing in crafting fluid user experiences, I master <span>Astro, React,</span> and the optimization of <> non-relational database (JSON) for modern, robust web applications. From simple presentations to complex web apps, I'm ready to tackle your challenges!"
+		</label>
+	</header>
 
-	<!-- main -->
-	<main>
+	<!-- @main: site -->
+	<main class="home">
+
 		<!-- @section: experiences -->
-		<section class="experiences">
-			<h2>my <span>experiences</span></h2>
-			<article></article>
-		</section>
 
 		<!-- @section: projects -->
+		<h2>my <span>projects</span></h2>
 		<section class="projects">
-		   <h2>my <span>projects</span></h2>
-		   <article>
-			<ul>
-				<li><a href="/howtodo/">How to do</a> - Examples</li>
-			</ul>
-		   </article>
+			<article>
+				<ul>
+					<li><a href="/howtodo/">How to do</a> - Examples</li>
+				</ul>
+		   	</article>
 		</section>
-	</main>
-</Layout>
 
-<style></style>
+	</main>
+
+</Layout>
