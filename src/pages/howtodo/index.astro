@@ -3,27 +3,28 @@ import Layout from "../../layouts/Layout.astro"
 ---
 
 <Layout>
+
     <!-- @nav: breadcrumb -->
 	<nav class="breadcrumb">
 		<a href="/"><i class="bx bxs-home"></i></a>
         <i class='bx bx-chevron-right'></i>
 		<span>how to do</span>
 	</nav>
-
-    <!-- @header: basic info -->
-	 <header class="howtodo">
-		<h1><span>How to do</span> examples</h1>
-	 </header>
-
-    <!-- main -->
+    
+	<!-- @main: site -->
     <main>
-        <section class="howtodo">
-            <article>
+
+        <!-- @section: How To Do examples -->
+        <h2><span>How to do</span> examples</h2>
+        <section class="howtodo-examples">
+            <!-- @article: Slideshow Menu -->
+            <article class="slideshow-menu">
                 <ul>
                     <li><a href="slideshow/#Carousel">Slideshow Carousel</a> - Built with Astro, Html, Css and JavaScript.</li>
                 </ul>
             </article>
         </section>
+        
     </main>
 </Layout>
 
