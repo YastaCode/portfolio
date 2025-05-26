@@ -1,6 +1,7 @@
+/* @fonts: yastacode */
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Geist:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
-/* @root */
+/* @root: yastacode */
 :root{
     --gray-100: #F8F9FA;
     --gray-200: #E9ECEF;
@@ -36,19 +37,21 @@
     --border-color: rgba(0,0,0,0.15);
 }
 
-*, *::after, *::before{
+/* @html: default */
+*, 
+*::after, 
+*::before{
     box-sizing: border-box;
 }
 
-/* @html */
 html{
-    color: var(--font-color);
-    font-size: var(--font-size);
     font-family: var(--font-default);
     font-weight: 100;
+    color: var(--font-color);
+    font-size: var(--font-size);
 }
 
-/* @body */
+/* @body: yastacode */
 body{
     margin: 0;
     padding: 1rem;
@@ -57,26 +60,38 @@ body{
 
 /* @default: tags */
 h1,h2,h3,h4,h5,h6{
-    font-family: var(--font-space);
     font-weight: 100;
-}
-h1,h2{
     text-transform: capitalize;
     span{
-        font-weight: 300;
+        font-weight: normal;
     }
+}
+h1{
+    font-size: 2.586rem;
+}
+h2{
+    font-size: 2.088rem;
+}
+h3{
+    font-size: 1.774rem	;
 }
 a{
     text-decoration: none;
     color: var(--primary);
-
 }
 a:hover{
     text-decoration: underline;
 }
-/* @skeleton: style */
+nav{
+    padding:2rem 0;
+}
+footer{
+    padding: 3rem 0;
+}
+
+/* @skeleton: yastacode */
 .skeleton{
-    background: var(--light);
+    background-color: var(--light);
     max-width: 900px;
     margin: 0 auto;
     border: 1px solid var(--border-color);
@@ -92,68 +107,59 @@ a:hover{
 }
 
 /* @nav: breadcrumb */
-	nav.breadcrumb{
-		border-bottom: 1px solid var(--border-color);
-		padding: 1.65rem 0;
-        font-size: 0.9rem;
-		display: flex;
-		justify-content: start;
-		align-items: center;
-		gap: 0.2rem;
-	}
-	nav a{
-		text-decoration: none;
-		text-transform: capitalize;
-		display: flex;
-	}
-    nav a:first-child{
-        text-decoration: none;
-    }
-	nav a:hover{
-        filter: contrast(20%);
-	}
-    nav .bxs-home{
-        transition: all 0.6s ease;
-        font-size: 1.7rem;
-    }
-    nav .bxs-home:hover{
-        transform: translateY(-4px);
-    }
-    nav .bx-chevron-right{
-        font-size: 1.2rem;
-    }
-    nav span{
-        text-transform: capitalize;
-        color: inherit;
-    }
+.breadcrumb{
+	border-bottom: 1px solid var(--border-color);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	gap: 0.2rem;
+}
+.breadcrumb a{
+    display: flex;
+}
+.breadcrumb a:first-child{
+    text-decoration: none;
+}
+.breadcrumb a:hover,
+    ul a:hover{
+    filter: contrast(20%);
+}
+.breadcrumb .bxs-home{
+    transition: all 0.6s ease;
+    font-size: 1.7rem;
+}
+.breadcrumb .bxs-home:hover{
+    transform: translateY(-4px);
+}
+.breadcrumb .bx-chevron-right{
+    font-size: 1.2rem;
+}
 
-    /* @header: basic */
-	header label{
-		text-align: justify;
-	}
+/* @header: yastacode */
 
-	/* @main: sections */
-	main{
-		flex: 1;
-	}
-    .slideshow{
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-    }
-    /* @section: tags */
-    .carousel{
-        background: var(--gray-200);
-        padding: 1rem;
-        border: 1px solid var(--border-color);
-        border-radius: 0.3rem;
-    }
-	/* @section: experiences */
-	/* @section: projects */
-    .projects{
+/* @main: yastacode */
+main{
+	flex: 1;
+}
 
-    }
-    
-    article a:hover{
-        filter: contrast(20%);
-    }
+/* @section: yastacode */
+section.slideshow{
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* @row */
+.row{
+    background: var(--gray-200);
+    padding: 0 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+}
+
+/* @article: yastacode */
+
+/* @footer: yastacode */
