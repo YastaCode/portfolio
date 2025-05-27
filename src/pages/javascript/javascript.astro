@@ -1,0 +1,30 @@
+---
+import ProductApp from "../../components/ProductApp.astro"
+import Layout from "../../layouts/Layout.astro"
+---
+
+<Layout>
+    <!-- @nav: breadcrumb -->
+	<nav class="breadcrumb">
+        <a href="/"><i class="bx bxs-home"></i></a>
+        <i class='bx bx-chevron-right'></i>
+        <a href="/javascript/">javascript</a>
+		<span>product</span>
+	</nav>
+
+    <!-- @main: site -->
+    <main>
+        <!-- @section: JavaScript Examples-->
+        <h2><span>JavaScript</span> examples</h2>
+        <section class="javascript">
+
+            <div class="row" id="Product">
+                <!-- @article: Javascript Product-->
+                <h3>JavaScript <span>Product App</span></h3>
+                <article>
+                    <ProductApp />
+                </article>
+            </div>
+        </section>
+    </main>
+</Layout>
