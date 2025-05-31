@@ -1,0 +1,104 @@
+<div id="app">
+    <div class="row" id="formContainer">
+        <form id="productForm">
+            <fieldset>
+                <legend>Add Product</legend>
+                <div class="inputs">
+                    <input 
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        placeholder="Product name"
+                    >
+                    <input 
+                        type="number" 
+                        name="price" 
+                        id="price" 
+                        placeholder="Product price"
+                        step="0.01"
+                    >
+                    <input 
+                        type="number" 
+                        name="year" 
+                        id="year" 
+                        placeholder="Product year"
+                        min="1918"
+                    >
+                </div>
+                <input type="submit" value="Save">
+            </fieldset>
+        </form>
+    </div>
+    <div class="row list">
+        <fieldset>
+            <legend>Product List</legend>
+            <ol id="productList"></ol>
+        </fieldset>
+    </div>
+</div>
+
+<style>
+    /* @id: app */
+    #app{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* @row */
+    .row{
+        background: var(--light);
+    }
+    .row{
+        padding-top: 0.5rem;
+    }
+    /* @form */
+    /* @product: form */
+
+    /* @fieldset */
+    fieldset{
+        padding: 1rem;
+        border: 5px double var(--border-color);
+        border-radius: 0.5rem;
+    }
+
+    /* @legend */
+    legend{
+        font-size: 1.4rem;
+    }
+
+    /* @inputs */
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
+    /* @input */
+    input{
+        padding: 0.25rem;
+        border: 1px solid var(--border-color);
+    }
+
+    /* @input: submit */
+    [type="submit"]{
+        background: var(--primary);
+        border: 1px solid var(--border-color);
+        border-radius: 0.2rem;
+        color: var(--light);
+        width: 120px;
+        margin-top: 1rem;
+        cursor: pointer;
+        transition: all 3.s ease;
+    }
+    [type="submit"]:hover{
+        filter: contrast(50%);
+    }
+
+    /* @list */
+    ol{
+        padding-left: 0;
+        margin: 0;
+    }
+</style>
+<script src="../scripts/product-app.js"></script>
