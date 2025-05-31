@@ -63,7 +63,7 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 100;
     text-transform: capitalize;
     span{
-        font-weight: normal;
+        /* font-weight: normal; */
     }
 }
 h1{
@@ -74,6 +74,13 @@ h2{
 }
 h3{
     font-size: 1.774rem	;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+        font-size: 1.3rem;
+        color: var(--gray-500)
+    }
 }
 a{
     text-decoration: none;
@@ -156,10 +163,65 @@ section.slideshow{
 .row{
     background: var(--gray-200);
     padding: 0 1rem;
+    padding-bottom: 1rem;
     border: 1px solid var(--border-color);
     border-radius: 1rem;
 }
 
 /* @article: yastacode */
 
+/* @Id: product list */
+#productList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: disc;
+}
+#productList span b{
+    font-weight: 300;
+}
+#productList span a{
+    cursor: pointer;
+}
+#productList span a:hover{
+    filter: contrast(20%);
+}
+#productList span i{
+    font-size: 1.5rem;
+}
+
+/* @message */
+.message{
+    margin-top: 0.3rem;
+}
+.message .success,
+.message .error,
+.message .warning,
+.message .info{
+    border: 1px solid var(--border-color);
+    padding: 0.2rem 1rem;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.success{
+    background-color: rgb(218, 247, 218);
+    color: var(--success);
+}
+.error{
+    background-color: rgb(244, 213, 213);
+    color: var(--danger);
+}
+.warning{
+    background: rgb(249, 244, 235);
+    color: var(--warning);
+}
+.message .info{
+    background: var(--info);
+    color: var(--gray-800);
+}
+.message span i{
+    font-size: 1.7rem;
+}
 /* @footer: yastacode */
